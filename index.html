@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   <!-- Leaflet map library -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/> 
+   <script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+
+
+
+    <script defer src="refactoredScript.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="side-bar">
+        <img src="pics/logo.png" class="mapty-logo">
+        <ul class="workoutlist">
+            <form class="workout-form hidden">
+                <div class="form-row">
+                    <label class="form-label">Type</label>
+                    <select class="form-input select">
+                        <option value="running">Running</option>
+                        <option value="cycling">Cycling</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label class="form-label">Distance</label>
+                    <input class="form-input distanceInp" placeholder="km">
+                </div>
+                <div class="form-row">
+                    <label class="form-label">Duration</label>
+                    <input class="form-input durationInp" placeholder="min">
+                </div>
+                <div class="form-row">
+                    <label class="form-label">Cadence</label>
+                    <input class="form-input cadenceInp" placeholder="step/min">
+                </div>
+                <div class="form-row  hidden">
+                    <label class="form-label">Elev Gain</label>
+                    <input class="form-input elevationInp" placeholder="meters">
+                </div>
+                <button class="form-button hidden">OK</button>
+            </form>
+        </ul>
+        <p class="copyright">
+            &copy; Copyright by AK Productions. Use for learning or your portfolio. Don't use to teach. Don't claim as your own.
+        </p>
+        </div>
+        <div id="map_div"></div>
+</body>
+</html>
